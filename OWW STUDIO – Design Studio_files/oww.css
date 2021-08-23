@@ -126,7 +126,7 @@ textarea {
     background-color: #fda4b3;
     border: 1px solid #fda4b3
 }
-.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger:visited {
+.btn-danger:not(:disa#007bffed):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger:visited {
     background-color: rgba(253, 164, 179, 0.8);
     border: 1px solid rgba(253, 164, 179, 0.8)
 }
