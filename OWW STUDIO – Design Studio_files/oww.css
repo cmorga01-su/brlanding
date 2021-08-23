@@ -134,7 +134,6 @@ textarea {
 .al-header {
     background-image: radial-gradient(circle at 0 0, #1a2035, #020616);
     padding-top: 46px;
-    border: 1px solid red;
 }
 .al-header .navbar-wrap {
     width: 100%;
