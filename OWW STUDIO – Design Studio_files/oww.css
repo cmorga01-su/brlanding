@@ -20,6 +20,7 @@ body {
         max-width: 1200px
     }
 }
+
 .al-heading h5 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -131,8 +132,8 @@ textarea {
     border: 1px solid rgba(253, 164, 179, 0.8)
 }
 .al-header {
-    background-image: radial-gradient(circle at 0 0, #4e6cdd, #233ec8);
-    padding-top: 46px
+    background-image: radial-gradient(circle at 0 0, #1a2035, #020616);
+    padding-top: 46px;
 }
 .al-header .navbar-wrap {
     width: 100%;
@@ -159,7 +160,7 @@ textarea {
     margin-left: 5px
 }
 .al-hero {
-    padding-top: 120px
+    padding-top: 120px;
 }
 .al-hero .strike {
     text-decoration: line-through;
@@ -167,12 +168,12 @@ textarea {
 }
 .al-hero .owl-carousel .item {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 .al-hero .owl-carousel .item-img-1 .item-img-main {
     width: 470px;
     position: relative;
-    left: 30px
+    left: 30px;
 }
 .al-hero .owl-carousel .item-img-1 .item-img-number {
     content: url("../images/carousel/1/number.svg");
