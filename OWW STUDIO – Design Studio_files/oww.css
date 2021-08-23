@@ -21,8 +21,16 @@ body {
     }
 }
 
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+}
+h4, h5, p{
+    font-family: 'Quicksand', sans-serif;
+}
+
 .al-heading h5 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 5px;
@@ -37,7 +45,7 @@ body {
     margin-right: 10px
 }
 .al-heading h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 42px;
     color: white
@@ -135,6 +143,10 @@ textarea {
     background-image: radial-gradient(circle at 0 0, #1a2035, #020616);
     padding-top: 46px;
 }
+.heroIntro{
+    border: 1px solid red;
+    height: 100%;
+}
 .al-header .navbar-wrap {
     width: 100%;
     display: flex;
@@ -150,7 +162,6 @@ textarea {
 }
 .al-header .navbar-nav .nav-item .br {
     width: 152px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25)
 }
 .al-header .navbar-nav .nav-item .nav-link {
     color: white;
