@@ -143,7 +143,6 @@ textarea {
 .al-header {
     background-image: radial-gradient(circle at 0 0, #5c637c, #02040c);
     padding-top: 36px;
-    border: 1px solid red;
 }
 .heroIntro{
     display: flex;
@@ -175,6 +174,7 @@ textarea {
 .heroSvg{
     width: 120%;
     position: relative;
+    z-index: 10;
     left: -9rem;
     top: -4rem;
 }
@@ -213,10 +213,10 @@ textarea {
 
 
 .al-client {
-    padding-top: 8px;
+    padding: 8px;
 }
 .al-client .al-heading {
-    margin-bottom: 40px
+    margin-bottom: 40px;
 }
 .al-client .al-content ul {
     margin-bottom: 0;
@@ -224,7 +224,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 .al-client .al-content ul:first-child {
     margin-bottom: 45px
@@ -282,66 +282,86 @@ textarea {
         height: 35px
     }
 }
+
 .al-service {
-    padding-top: 115px
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #e3e7ee;
+}
+.servicesHands{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 100%;
+}
+.handsCol{
+    height: 100vh;
+}
+.handsImg{
+    position: relative;
+    top: 8rem;
+    left: -2rem;
+    z-index: 10;
+    height: 85%;
 }
 .al-service .al-heading {
-    margin-bottom: 300px
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
 }
-.al-service .al-heading h3 {
-    width: 600px;
-    margin-left: 30px;
-    margin-top: 33px;
-    margin-bottom: 0
+
+.al-service .al-heading .al-heading-border{
+    border: 1px solid #7e86a6;;
+    margin-right: 0.6rem;
+    height: 2px;
+    width: 20px;
+    position: relative;
+}
+
+.al-service .al-heading h2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #7e86a6;
+}
+.al-ServiceCards{
+    padding-right: 2rem;
 }
 .al-service .al-content {
-    margin-top: -300px
+    position: relative;
+    z-index: 5;
+    margin-top: 30px;
 }
 .al-service .al-content .al-card {
-    background-color: white;
-    height: 100%
+    box-shadow: 2px 2px 20px #d7dadf;
+    border: none;
+    border-radius: 10px;
+    height: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
 }
-.al-service .al-content .al-card.info .al-card-heading h4 {
-    border-left: 10px solid #4cd6f2
+.al-service .al-card{
+    padding: 25px;
 }
-.al-service .al-content .al-card.warning .al-card-heading h4 {
-    border-left: 10px solid #f8d596
-}
-.al-service .al-content .al-card.danger .al-card-heading h4 {
-    border-left: 10px solid #fda4b3
-}
-.al-service .al-content .al-card-heading {
-    padding-top: 36px
-}
-.al-service .al-content .al-card-heading h4 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
+
+.al-service .al-card .al-content .al-card-heading h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 23px;
     letter-spacing: 5px;
-    color: rgba(45, 51, 79, 0.5);
+    color: rgb(11, 19, 47);
     text-transform: uppercase;
-    height: 50px;
-    display: flex;
     align-items: center;
-    padding-left: 40px
-}
-.al-service .al-content .al-card-content {
-    padding: 0 50px 50px
 }
 .al-service .al-content .al-card-content p {
-    font-size: 20px;
-    line-height: 28px;
-    color: #2d334f;
-    line-height: normal;
-    margin-bottom: 0
+    color: #696c79;
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 1rem;
 }
-.al-service .al-content .al-card-content span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #2d334f
-}
+
 .al-service .al-content .al-card:hover {
     box-shadow: 0 50px 100px 0 rgba(45, 51, 79, 0.1)
 }
@@ -385,8 +405,8 @@ textarea {
     color: rgba(45, 51, 79, 0.5);
     margin-bottom: 33px
 }
-.al-works .al-heading h5 .al-heading-border {
-    border-bottom: 1.6px solid rgba(45, 51, 79, 0.5)
+.al-works .al-heading h2 .al-heading-border {
+    border-bottom: 1.6px solid rgba(45, 51, 79, 0.5);
 }
 .al-works .al-heading h3 {
     color: #2d334f
@@ -402,7 +422,8 @@ textarea {
     left: 0;
     bottom: 0;
     margin-bottom: 30px;
-    margin-left: -35px
+    margin-left: -35px;
+    border: 1px solid red;
 }
 .al-works .al-content .al-works-card__brex .rectangle {
     content: url("../images/work/work-rectangle-2.svg");
