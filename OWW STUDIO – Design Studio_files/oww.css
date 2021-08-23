@@ -24,6 +24,7 @@ body {
 h1, h2, h3{
     font-family: 'Playfair Display', serif;
     font-weight: 300;
+    line-height: 125%;
 }
 h4, h5, p{
     font-family: 'Quicksand', sans-serif;
@@ -141,19 +142,50 @@ textarea {
 }
 .al-header {
     background-image: radial-gradient(circle at 0 0, #1a2035, #020616);
-    padding-top: 46px;
+    padding-top: 36px;
 }
 .heroIntro{
-    border: 1px solid red;
+    display: flex;
+    align-items: start;
+    align-content: center;
+    justify-content: center;
+    margin-top: -2.5rem;
     height: 100%;
 }
+
+.heroText{
+    padding: 2rem 4rem;
+}
+.heroText h1{
+    color: #D3E5E8;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+.heroText p{
+    color: rgb(243, 241, 233);
+    font-size: 1.4rem;
+    line-height: 124%;
+}
+.heroImg{
+    position: relative;
+    padding-right: 2rem;
+}
+.heroSvg{
+    width: 120%;
+    position: relative;
+    left: -9rem;
+    top: -4rem;
+}
+
 .al-header .navbar-wrap {
     width: 100%;
     display: flex;
     justify-content: center
 }
 .al-header .navbar-brand {
-    position: absolute
+    position: absolute;
+    left: 8%;
 }
 .al-header .navbar-nav .nav-item {
     display: flex;
