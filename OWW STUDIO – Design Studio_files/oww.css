@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 html, body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0
 }
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     color: #2d334f;
     overflow-x: hidden;
-    background-color: #F6F7F9
+    background-color: #eaedf1
 }
 @media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -21,12 +20,12 @@ body {
     }
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     font-family: 'Playfair Display', serif;
     font-weight: 300;
     line-height: 125%;
 }
-h4, h5, p{
+p{
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -141,14 +140,14 @@ textarea {
     border: 1px solid rgba(253, 164, 179, 0.8)
 }
 .al-header {
-    background-image: radial-gradient(circle at 0 0, #5c637c, #02040c);
+    background-image: radial-gradient(circle at 0 0, #040c2a, #5c637c);
     padding-top: 36px;
 }
 .heroIntro{
     display: flex;
     align-items: start;
-    align-content: stretch;
-    justify-content: stretch;
+    align-content: space-between;
+    justify-content: space-between;
     margin-top: -3rem;
     height: 100%;
 }
@@ -157,14 +156,15 @@ textarea {
     padding: 2rem 4rem;
 }
 .heroText h1{
-    color: #D3E5E8;
+    color: #d9e9ff;
     font-size: 4rem;
     margin-bottom: 1.5rem;
     text-transform: capitalize;
+    font-weight: 400;
 }
 .heroText p{
-    color: rgb(243, 241, 233);
-    font-size: 1.4rem;
+    color: #D3E5E8;
+    font-size: 1.45rem;
     line-height: 127%;
 }
 .heroImg{
@@ -211,11 +211,12 @@ textarea {
     color: rgba(255, 255, 255, 0.8)
 }
 
-
+/*************************************Client***************************************/
+/*************************************Client***************************************/
 .al-client {
-    padding: 8px;
+    padding-bottom: 5rem;
 }
-.al-client .al-heading {
+.al-client .al-h8pxeading {
     margin-bottom: 40px;
 }
 .al-client .al-content ul {
@@ -284,9 +285,9 @@ textarea {
 }
 
 .al-service {
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 60px;
-    background-color: #e3e7ee;
+   background-color: rgb(235, 237, 244);
 }
 .servicesHands{
     display: flex;
@@ -315,7 +316,7 @@ textarea {
 }
 
 .al-service .al-heading .al-heading-border{
-    border: 1px solid #7e86a6;;
+    border: 1px solid #9598a0;
     margin-right: 0.6rem;
     height: 2px;
     width: 20px;
@@ -323,9 +324,11 @@ textarea {
 }
 
 .al-service .al-heading h2{
-    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
     text-transform: capitalize;
-    color: #7e86a6;
+    color: #a0a3b0;
 }
 .al-ServiceCards{
     padding-right: 2rem;
@@ -335,20 +338,21 @@ textarea {
     z-index: 5;
     margin-top: 30px;
 }
+
 .al-service .al-content .al-card {
-    box-shadow: 2px 2px 20px #d7dadf;
+    box-shadow: 2px 2px 20px #d4d7db;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 100%;
     margin-bottom: 2rem;
     overflow: hidden;
 }
+
 .al-service .al-card{
     padding: 25px;
 }
 
 .al-service .al-card .al-content .al-card-heading h4 {
-    font-family: 'Quicksand', sans-serif;
     font-size: 23px;
     letter-spacing: 5px;
     color: rgb(11, 19, 47);
@@ -362,9 +366,6 @@ textarea {
     margin-top: 1rem;
 }
 
-.al-service .al-content .al-card:hover {
-    box-shadow: 0 50px 100px 0 rgba(45, 51, 79, 0.1)
-}
 @media (max-width: 575.98px) {
     .al-service .al-heading {
         margin-bottom: 250px
@@ -629,6 +630,7 @@ textarea {
     animation-fill-mode: both;
     animation-name: fadeInRight
 }
+
 .al-about .al-content .tab-content-card {
     width: 500px;
     background-color: #5571ff;
@@ -636,6 +638,7 @@ textarea {
     position: relative;
     margin-top: -120px
 }
+
 .al-about .al-content .tab-content-card-rectangle {
     content: url("../images/about/about-rectangle.svg");
     position: absolute;
@@ -643,6 +646,7 @@ textarea {
     bottom: 0;
     margin-left: -10px
 }
+
 .al-about .al-content .tab-content-card-triangle {
     content: url("../images/about/about-triangle.svg");
     position: absolute;
@@ -651,6 +655,7 @@ textarea {
     margin-right: 30px;
     margin-bottom: -20px
 }
+
 .al-about .al-content .tab-content-card-rectangle-2 {
     content: url("../images/about/about-rectangle-2.svg");
     position: absolute;
@@ -659,6 +664,7 @@ textarea {
     margin-bottom: 85px;
     margin-right: -20px
 }
+
 .al-about .al-content .tab-content-card h5 {
     font-size: 23px;
     color: white;
